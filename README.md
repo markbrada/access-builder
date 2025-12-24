@@ -1,7 +1,6 @@
-````md
 # Access Builder
 
-Version: 0.1.0
+Version: 0.1.1
 
 Design-only web app to draw rubber ramps and platforms in 2D, preview in 3D, and export a dimensioned PDF.
 
@@ -13,9 +12,9 @@ Design-only web app to draw rubber ramps and platforms in 2D, preview in 3D, and
 - Export: dimensioned PDF (PDF)
 
 ## Latest changes
-- Added: Initial project scaffold and UI shell
-- Changed: N/A
-- Fixed: N/A
+- Added: Vite + React + TypeScript scaffold with UI shell (top bar, toolbox, canvas, inspector).
+- Added: Version metadata surfaced in the UI.
+- Added: GitHub Pages deployment workflow for static builds.
 
 Full history: see CHANGELOG.md
 
@@ -29,7 +28,7 @@ Full history: see CHANGELOG.md
 ```bash
 npm i
 npm run dev
-````
+```
 
 ## Build
 
@@ -53,7 +52,3 @@ npm run preview
 ## Licence
 
 TBC
-
-```
-::contentReference[oaicite:0]{index=0}
-```
