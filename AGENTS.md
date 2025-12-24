@@ -65,3 +65,26 @@ Generate a single-page PDF:
 - No console errors.
 - Keep geometry and rendering code separated from UI components.
 - Every PR includes a short summary in the description and how to test locally.
+
+- ## Versioning + changelog (mandatory)
+We use Semantic Versioning: MAJOR.MINOR.PATCH.
+- PATCH: tiny fixes, refactors, UI polish, non-breaking tweaks.
+- MINOR: new user-facing features (new tools, export improvements, editor interactions).
+- MAJOR: breaking changes to JSON format, workflows, or UI redesign.
+
+On every PR:
+1) Bump version in `package.json` AND `src/version.ts`.
+2) Update `CHANGELOG.md` under the new version with date (DD/MM/YYYY) and bullet list of changes.
+3) Update `README.md`:
+   - Update the displayed version string.
+   - Update a short "Latest changes" section (max 5 bullets) that mirrors the changelog entry.
+
+Version display:
+- The app must show the current version in the UI (top bar or footer).
+
+Changelog format:
+- Follow Keep a Changelog structure: Added, Changed, Fixed.
+- Always include an Unreleased section at top.
+
+If the PR makes no functional changes, still bump PATCH and add a short changelog entry (e.g. "Docs: ...", "Chore: ...").
+
